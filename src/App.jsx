@@ -10,7 +10,7 @@ function App() {
       <div className="app">
         <nav className="navbar">
           <div className="nav-container">
-            <h1 className="logo">🎮 Jonas Entertainment</h1>
+            <Link to="/" className="logo">◄ JONAS ENTERTAINMENT ►</Link>
             <ul className="nav-menu">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/music">Music</Link></li>

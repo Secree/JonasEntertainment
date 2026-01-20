@@ -11,10 +11,13 @@
 }
 
 :root {
-  --background: #FFF8E7;
-  --foreground: #3E2723;
+  --retro-cream: #FFF8E7;
+  --retro-beige: #F5E6D3;
+  --retro-brown: #3E2723;
   --retro-orange: #FF6B35;
   --retro-rust: #D84315;
+  --background: #FFF8E7;
+  --foreground: #3E2723;
   --primary-color: #FF6B35;
   --secondary-color: #D84315;
   --card-bg: #FFF8E7;
