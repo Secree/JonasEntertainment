@@ -1,530 +1,520 @@
 .music-page {
-  max-width: 900px;
-  margin: 0 auto;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .music-page h1 {
-  font-family: 'Press Start 2P', cursive;
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  color: var(--retro-orange);
-  text-shadow: 4px 4px 0 var(--retro-rust);
-  letter-spacing: 2px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--retro-orange);
+    text-shadow: 4px 4px 0 var(--retro-rust);
+    letter-spacing: 2px;
 }
 
 .search-form {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .search-input {
-  flex: 1;
-  min-width: 250px;
-  padding: 1rem;
-  font-family: 'VT323', monospace;
-  font-size: 1.3rem;
-  border: 4px solid var(--foreground);
-  background: var(--background);
-  color: var(--foreground);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+    font-family: 'VT323', monospace;
+    font-size: 1.3rem;
+    border: 4px solid var(--foreground);
+    background: var(--background);
+    color: var(--foreground);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .search-input:focus {
-  outline: none;
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
-  transform: translate(-1px, -1px);
+    outline: none;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
+    transform: translate(-1px, -1px);
 }
 
 .search-btn {
-  padding: 1rem 1.5rem;
-  font-family: 'VT323', monospace;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: 4px solid var(--foreground);
-  background: var(--foreground);
-  color: var(--background);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 1rem 1.5rem;
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 4px solid var(--foreground);
+    background: var(--foreground);
+    color: var(--background);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .search-btn:hover {
-  background: var(--retro-orange);
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
+    background: var(--retro-orange);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 .player-container {
-  background: var(--background);
-  border: 4px solid var(--foreground);
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
-  padding: 2rem;
-  margin-bottom: 2rem;
+    background: var(--background);
+    border: 4px solid var(--foreground);
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .now-playing {
-  text-align: center;
-  margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .album-art {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 1.5rem;
-  background: var(--retro-orange);
-  border: 4px solid var(--foreground);
-  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    background: var(--retro-orange);
+    border: 4px solid var(--foreground);
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .vinyl {
-  font-size: 5rem;
-  animation: rotate 3s linear infinite;
-  animation-play-state: paused;
+    font-size: 5rem;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .track-info h2 {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-  color: var(--foreground);
-  letter-spacing: 1px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--foreground);
+    letter-spacing: 1px;
 }
 
 .track-info p {
-  color: var(--text-secondary);
-  font-size: 1.3rem;
-  font-weight: bold;
+    color: var(--text-secondary);
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .player-controls {
-  padding: 1rem 0;
+    padding: 1rem 0;
 }
 
 .progress-bar {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .time {
-  color: var(--foreground);
-  font-size: 1.1rem;
-  min-width: 45px;
-  font-weight: bold;
+    color: var(--foreground);
+    font-size: 1.1rem;
+    min-width: 45px;
+    font-weight: bold;
 }
 
 .seek-bar {
-  flex: 1;
-  height: 8px;
-  -webkit-appearance: none;
-  appearance: none;
-  background: var(--foreground);
-  border: 2px solid var(--foreground);
-  outline: none;
-  cursor: pointer;
+    flex: 1;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--foreground);
+    border: 2px solid var(--foreground);
+    outline: none;
+    cursor: pointer;
 }
 
 .seek-bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background: var(--retro-orange);
-  cursor: pointer;
-  border: 2px solid var(--foreground);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--retro-orange);
+    cursor: pointer;
+    border: 2px solid var(--foreground);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .seek-bar::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: var(--retro-orange);
-  cursor: pointer;
-  border: 2px solid var(--foreground);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    width: 20px;
+    height: 20px;
+    background: var(--retro-orange);
+    cursor: pointer;
+    border: 2px solid var(--foreground);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .control-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .control-btn {
-  background: var(--background);
-  border: 4px solid var(--foreground);
-  color: var(--foreground);
-  font-size: 1.5rem;
-  width: 50px;
-  height: 50px;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background: var(--background);
+    border: 4px solid var(--foreground);
+    color: var(--foreground);
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .control-btn:hover {
-  background: var(--retro-orange);
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
-  color: var(--background);
+    background: var(--retro-orange);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
+    color: var(--background);
 }
 
 .play-btn {
-  width: 60px;
-  height: 60px;
-  font-size: 1.8rem;
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
 }
 
 .volume-control {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .volume-bar {
-  width: 150px;
-  height: 8px;
-  -webkit-appearance: none;
-  appearance: none;
-  background: var(--foreground);
-  border: 2px solid var(--foreground);
-  outline: none;
-  cursor: pointer;
+    width: 150px;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--foreground);
+    border: 2px solid var(--foreground);
+    outline: none;
+    cursor: pointer;
 }
 
 .volume-bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 18px;
-  height: 18px;
-  background: var(--retro-rust);
-  cursor: pointer;
-  border: 2px solid var(--foreground);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: var(--retro-rust);
+    cursor: pointer;
+    border: 2px solid var(--foreground);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .volume-bar::-moz-range-thumb {
-  width: 18px;
-  height: 18px;
-  background: var(--retro-rust);
-  cursor: pointer;
-  border: 2px solid var(--foreground);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    width: 18px;
+    height: 18px;
+    background: var(--retro-rust);
+    cursor: pointer;
+    border: 2px solid var(--foreground);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .playlist {
-  background: var(--background);
-  border: 4px solid var(--foreground);
-  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
-  padding: 1.5rem;
+    background: var(--background);
+    border: 4px solid var(--foreground);
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
 }
 
 .playlist h3 {
-  font-family: 'Press Start 2P', cursive;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-  color: var(--foreground);
-  letter-spacing: 1px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: var(--foreground);
+    letter-spacing: 1px;
 }
 
 .playlist-items {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 .playlist-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
 }
 
 .playlist-item:hover {
-  background: var(--retro-orange);
-  border: 2px solid var(--foreground);
-  color: var(--background);
+    background: var(--retro-orange);
+    border: 2px solid var(--foreground);
+    color: var(--background);
 }
 
 .playlist-item.active {
-  background: var(--foreground);
-  color: var(--background);
-  border: 2px solid var(--foreground);
+    background: var(--foreground);
+    color: var(--background);
+    border: 2px solid var(--foreground);
 }
 
 .track-number {
-  color: inherit;
-  font-weight: bold;
-  min-width: 30px;
-  font-size: 1.2rem;
+    color: inherit;
+    font-weight: bold;
+    min-width: 30px;
+    font-size: 1.2rem;
 }
 
 .track-details {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
 .track-title {
-  color: inherit;
-  font-weight: bold;
-  font-size: 1.2rem;
+    color: inherit;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .track-artist {
-  color: inherit;
-  font-size: 1.1rem;
-  opacity: 0.8;
+    color: inherit;
+    font-size: 1.1rem;
+    opacity: 0.8;
 }
 
 .track-duration {
-  color: inherit;
-  font-size: 1.1rem;
-  font-weight: bold;
+    color: inherit;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .track-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .track-item {
-  background: var(--background);
-  border: 4px solid var(--foreground);
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
-  padding: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
+    background: var(--background);
+    border: 4px solid var(--foreground);
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
 .track-item:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.4);
-  background: var(--retro-orange);
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.4);
+    background: var(--retro-orange);
 }
 
 .track-item.active {
-  background: var(--foreground);
-  color: var(--background);
+    background: var(--foreground);
+    color: var(--background);
 }
 
 .track-number {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 0.8rem;
-  font-weight: bold;
-  background: var(--foreground);
-  color: var(--background);
-  padding: 0.3rem 0.6rem;
-  border: 2px solid var(--foreground);
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: var(--foreground);
+    color: var(--background);
+    padding: 0.3rem 0.6rem;
+    border: 2px solid var(--foreground);
 }
 
 .track-item.active .track-number {
-  background: var(--retro-orange);
-  color: var(--foreground);
+    background: var(--retro-orange);
+    color: var(--foreground);
 }
 
 .track-item:hover .track-number {
-  background: var(--background);
-  color: var(--foreground);
+    background: var(--background);
+    color: var(--foreground);
 }
 
 .track-thumbnail {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border: 3px solid var(--foreground);
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--foreground);
 }
 
 .track-details {
-  width: 100%;
+    width: 100%;
 }
 
 .track-name {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
-  word-wrap: break-word;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    word-wrap: break-word;
 }
 
 .track-artist {
-  font-size: 1.1rem;
-  opacity: 0.8;
-  margin-top: 0.5rem;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-top: 0.5rem;
 }
 
 .track-item:hover .track-name,
 .track-item:hover .track-artist {
-  color: var(--background);
+    color: var(--background);
 }
 
 .track-item.active .track-name,
 .track-item.active .track-artist {
-  color: var(--background);
+    color: var(--background);
 }
 
 .playing-indicator {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  font-size: 1.5rem;
-  animation: pulse 1s ease-in-out infinite;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    animation: pulse 1s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
 }
 
 @media (max-width: 768px) {
-  .music-page h1 {
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
-  }
+    .music-page h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
 
-  .search-form {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
+    .search-form {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
 
-  .search-input {
-    min-width: 100%;
-    font-size: 1.1rem;
-    padding: 0.8rem;
-  }
+    .search-input {
+        min-width: 100%;
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
 
-  .search-button {
-    width: 100%;
-    padding: 0.8rem;
-  }
+    .search-button {
+        width: 100%;
+        padding: 0.8rem;
+    }
 
-  .player-card {
-    padding: 1.5rem;
-  }
+    .player-card {
+        padding: 1.5rem;
+    }
 
-  .album-art {
-    width: 150px;
-    height: 150px;
-  }
+    .album-art {
+        width: 150px;
+        height: 150px;
+    }
 
-  .track-info h2 {
-    font-size: 0.9rem;
-  }
+    .track-info h2 {
+        font-size: 0.9rem;
+    }
 
-  .track-list {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+    .track-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
-  .track-thumbnail {
-    height: 150px;
-  }
+    .track-thumbnail {
+        height: 150px;
+    }
 
-  .track-name {
-    font-size: 0.7rem;
-  }
+    .track-name {
+        font-size: 0.7rem;
+    }
 
-  .playlist-items {
-    grid-template-columns: 1fr;
-  }
+    .playlist-items {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
-  .music-page h1 {
-    font-size: 1rem;
-    letter-spacing: 1px;
-  }
+    .music-page h1 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
 
-  .search-input {
-    font-size: 1rem;
-    padding: 0.7rem;
-  }
+    .search-input {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
 
-  .album-art {
-    width: 120px;
-    height: 120px;
-  }
+    .album-art {
+        width: 120px;
+        height: 120px;
+    }
 
-  .track-info h2 {
-    font-size: 0.7rem;
-  }
+    .track-info h2 {
+        font-size: 0.7rem;
+    }
 
-  .track-info p {
-    font-size: 1rem;
-  }
+    .track-info p {
+        font-size: 1rem;
+    }
 
-  .play-button {
-    font-size: 1rem;
-    padding: 0.6rem 1rem;
-  }
+    .play-button {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
 
-  .track-thumbnail {
-    height: 120px;
-  }
+    .track-thumbnail {
+        height: 120px;
+    }
 
-  .track-name {
-    font-size: 0.6rem;
-    line-height: 1.5;
-  }
+    .track-name {
+        font-size: 0.6rem;
+        line-height: 1.5;
+    }
 
-  .track-number {
-    font-size: 0.6rem;
-    padding: 0.2rem 0.4rem;
-  }
-}
-
-  .player-container {
-    padding: 1.5rem;
-  }
-
-  .album-art {
-    width: 150px;
-    height: 150px;
-  }
-
-  .vinyl {
-    font-size: 4rem;
-  }
-
-  .track-info h2 {
-    font-size: 1.5rem;
-  }
+    .track-number {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+    }
 }
