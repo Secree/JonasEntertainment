@@ -1,0 +1,106 @@
+.snake-game {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.snake-game h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--foreground);
+  letter-spacing: 1px;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--foreground);
+}
+
+.game-over {
+  background: var(--danger);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.snake-grid {
+  position: relative;
+  background: var(--background);
+  border: 4px solid var(--foreground);
+  margin: 0 auto 2rem;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.snake-segment {
+  position: absolute;
+  background: var(--foreground);
+  border: 2px solid var(--foreground);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.food {
+  position: absolute;
+  background: var(--retro-orange);
+  border: 2px solid var(--foreground);
+  box-shadow: 0 0 10px var(--retro-orange);
+  animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.game-controls {
+  margin-bottom: 1.5rem;
+}
+
+.start-btn,
+.reset-btn {
+  background: var(--foreground);
+  border: 4px solid var(--foreground);
+  color: var(--background);
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 0.5rem;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.start-btn:hover,
+.reset-btn:hover {
+  background: var(--retro-orange);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.instructions {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .snake-grid {
+    transform: scale(0.8);
+  }
+}
