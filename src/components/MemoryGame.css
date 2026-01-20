@@ -106,13 +106,47 @@
 }
 
 @media (max-width: 768px) {
+  .memory-game h2 {
+    font-size: 1.3rem;
+  }
+
   .cards-grid {
-    max-width: 350px;
+    max-width: 320px;
     gap: 0.5rem;
   }
 
   .card-front,
   .card-back {
     font-size: 2rem;
+  }
+
+  .new-game-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .memory-game h2 {
+    font-size: 1rem;
+  }
+
+  .cards-grid {
+    max-width: 280px;
+    gap: 0.4rem;
+  }
+
+  .card-front,
+  .card-back {
+    font-size: 1.5rem;
+  }
+
+  .stats {
+    font-size: 1rem;
+  }
+
+  .new-game-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
   }
 }

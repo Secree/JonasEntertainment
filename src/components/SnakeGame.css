@@ -100,7 +100,47 @@
 }
 
 @media (max-width: 768px) {
+  .snake-game h2 {
+    font-size: 1.3rem;
+  }
+
   .snake-grid {
-    transform: scale(0.8);
+    transform: scale(0.85);
+  }
+
+  .controls button {
+    width: 55px;
+    height: 55px;
+    font-size: 1.3rem;
+  }
+
+  .restart-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .snake-game h2 {
+    font-size: 1rem;
+  }
+
+  .snake-grid {
+    transform: scale(0.7);
+  }
+
+  .score {
+    font-size: 1rem;
+  }
+
+  .controls button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+
+  .restart-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
   }
 }

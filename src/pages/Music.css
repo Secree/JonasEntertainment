@@ -415,13 +415,101 @@
 }
 
 @media (max-width: 768px) {
+  .music-page h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .search-form {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .search-input {
+    min-width: 100%;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  .search-button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .player-card {
+    padding: 1.5rem;
+  }
+
+  .album-art {
+    width: 150px;
+    height: 150px;
+  }
+
+  .track-info h2 {
+    font-size: 0.9rem;
+  }
+
   .track-list {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .track-thumbnail {
+    height: 150px;
+  }
+
+  .track-name {
+    font-size: 0.7rem;
   }
 
   .playlist-items {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 480px) {
+  .music-page h1 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .search-input {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .album-art {
+    width: 120px;
+    height: 120px;
+  }
+
+  .track-info h2 {
+    font-size: 0.7rem;
+  }
+
+  .track-info p {
+    font-size: 1rem;
+  }
+
+  .play-button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .track-thumbnail {
+    height: 120px;
+  }
+
+  .track-name {
+    font-size: 0.6rem;
+    line-height: 1.5;
+  }
+
+  .track-number {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
 
   .player-container {
     padding: 1.5rem;

@@ -86,11 +86,48 @@
 }
 
 @media (max-width: 768px) {
+  .games-page h1 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
   .game-selection {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .game-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .game-icon {
+    font-size: 3.5rem;
+  }
+
+  .game-card h3 {
+    font-size: 0.9rem;
   }
 
   .game-container {
     padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .games-page h1 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .game-icon {
+    font-size: 3rem;
+  }
+
+  .game-card h3 {
+    font-size: 0.7rem;
+  }
+
+  .game-card {
+    padding: 1.5rem 1rem;
   }
 }
